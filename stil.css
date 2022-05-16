@@ -1,0 +1,69 @@
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr 1fr 0.6fr 1.4fr;
+    grid-template-rows: 0.4fr 0.3fr 1.4fr 1.9fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 7px 7px;
+    grid-auto-flow: row dense;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "logoz search search search search usd"
+      "meniu overview overview overview overview overview"
+      "meniu networth networth income income expenses"
+      "meniu portofolio portofolio portofolio allassets allassets"
+      "meniu transactions transactions transactions allassets allassets";
+  }
+  
+  .meniu { grid-area: meniu; }
+  
+  .overview { grid-area: overview; }
+  
+  .networth { grid-area: networth; }
+  
+  .income { grid-area: income; }
+  
+  .expenses { grid-area: expenses; }
+  
+  .allassets { grid-area: allassets; }
+  
+  .portofolio { grid-area: portofolio; }
+  
+  .transactions { grid-area: transactions; }
+  
+  .search { grid-area: search; }
+  
+  .logoz { grid-area: logoz; }
+  
+  .usd {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: usd;
+  }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* For presentation only, no need to copy the code below */
+  
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  

@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: 5px solid aqua;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.menu{
+    border: 5px solid rgb(23, 9, 214);
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+main{
+    border: 5px solid red;
+    grid-column-start: 2;
+    grid-column-end: 3 ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 13fr ;
+}
+.headOverview{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+/* <div class="netWorth">Net Worth</div>
+<div class="income">Income</div>
+<div class="expenses">Expenses</div>
+<div class="portofolio">Portofolio Perfomance</div>
+<div class="allAssets">All Assets</div>
+<div class="transactions">Transactions</div> */
+
+.netWorth{
+    border: 5px solid rgb(46, 197, 8);
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.income{
+    border: 5px solid rgb(46, 197, 8);
+    grid-column-start: 2;
+    grid-column-end: 4 ;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.expenses{
+    border: 5px solid rgb(46, 197, 8);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.portofolio{
+    border: 5px solid rgb(46, 197, 8);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.allAssets{
+    border: 5px solid rgb(46, 197, 8);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.transactions{
+    border: 5px solid rgb(46, 197, 8);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+main{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
